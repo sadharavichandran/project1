@@ -31,27 +31,23 @@
     <body>
         <center>
         <div class="box">
-            <form>
-            <table cellpadding="10" cellspacing="0">
-               <h2>Login</h2>
-               <tr>
-                <td>Name</td><td><input type="text" placeholder="Enter your name" required></td>
-               </tr>
-               <tr>
-                <td>Email</td><td><input type="email" placeholder="Enter your email id"></td>
-               </tr>
-               <tr>
-                <td>UserName</td><td><input type="text" placeholder="Create new username"></td>
-               </tr>
-               <tr>
-                <td>Password</td><td><input type="text" placeholder="Create new password"></td>
-               </tr>
-               <tr><td>
-                        <button type="button" onclick="handleLogin()">Login</button>
-        <input type="reset">
-               </td></tr>
-            </table>
-          </form>
+<h2>Login Page</h2>
+
+  <form id="loginForm">
+    <label>Name:</label><br>
+    <input type="text" id="name" required><br><br>
+
+    <label>Email:</label><br>
+    <input type="email" id="email" required><br><br>
+
+    <label>Username:</label><br>
+    <input type="text" id="username" required><br><br>
+
+    <label>Password:</label><br>
+    <input type="password" id="password" required><br><br>
+
+    <button type="button" onclick="handleLogin()">Login</button>
+  </form>
         </div>
 
     <script>
