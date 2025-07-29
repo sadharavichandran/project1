@@ -47,13 +47,28 @@
                 <td>Password</td><td><input type="text" placeholder="Create new password"></td>
                </tr>
                <tr><td>
-                        <button type="button" onclick="alert('successfully submitted')">Sumbit</button>
+                        <button type="button" onclick="handleLogin()">Login</button>
         <input type="reset">
                </td></tr>
             </table>
           </form>
         </div>
-                
+
+    <script>
+    function handleLogin() {
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      if(name && email && username && password) {
+        alert("Login Successful \nWelcome, " + name + "!");
+       
+      } else {
+        alert(" Please fill all fields!");
+      }
+    }
+  </script>
     <hr>
              <h4>For More Details</h4>
              <h4>Contact Us</h4>
